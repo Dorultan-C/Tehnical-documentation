@@ -1,0 +1,95 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="main-body">
+<nav id="navbar">
+  <header>JS Documentation</header>
+<a href="#Introduction" class="nav-link">Introduction</a>
+<a href="#JavaScript" class="nav-link">JavaScript</a>
+<a href="#Variables" class="nav-link">Variables</a>
+<a href="#Scope" class="nav-link">Scope</a>
+<a href="#Functions" class="nav-link">Functions</a>
+</nav>
+<header>
+  <link rel="stylesheet" href="style.css">
+</header>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <p>
+      Javascript is a programming language. It is a scripting language that lets
+      us control multimedia within our web pages. It empowers a developer to do
+      many things like adding animation to our images or updating content
+      automatically on a page.
+    </p>
+    <p>
+      For example, if you are on a web page that has a shopping cart powered by
+      JavaScript, you wll notice that it immediately shows the total cost of
+      what you want to buy including taxes, shipping, etc. Javascript is then
+      used when determining whether the credit card details you entered were
+      valid before transferring those details across the net to the bank for
+      processing.
+    </p>
+  </section>
+  <section class="main-section" id="JavaScript">
+    <header>JavaScript</header>
+    <p>
+      Javascript is now THE language of the web. For years it was only run in
+      browsers to operate on HTML. It also runs on servers and is as powerful as
+      many of the programming languages you wll encounter.
+    </p>
+    <p>
+      JavaScript is among the worlds most used programming languages. Without
+      it, well be looking at pages that do nothing other than display images and
+      text. So while CSS may be what offers style to a website, JavaScript (JS)
+      is what gives it life.
+    </p>
+    <code>function square(number) {
+      return number * number;} </code>
+      <code>return number * number;</code>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>Variable means anything that can vary. In JavaScript, a variable stores the data value that can be changed later on.</p>
+    <p>A JavaScript variable is simply a name of storage location. There are two types of variables in JavaScript : local variable and global variable. There are some rules while declaring a JavaScript variable (also known as identifiers). Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.</p>
+    <code>const PI = 3,14;</code>
+    <code>
+    //THIS WILL CAUSE AN ERROR 
+    function f() {};
+    const f =5;
+    //THIS WILL CAUSE AN ERROR ALSO 
+    function f()
+    {const g= 5;
+    var g;
+  //statements }
+    </code>
+  </section>
+  <section class="main-section" id="Scope">
+    <header>Scope</header>
+    <p>Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript. The two types of scope are local and global: Global variables are those declared outside of a block. Local variables are those declared inside of a block.</p>
+    <p>Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript. The two types of scope are local and global</p>
+    <code>
+      if (true) {
+        var x = 5;
+      }
+      console.log(x); // 5
+    </code>
+  </section>
+  <section class="main-section" id="Functions">
+    <header>Functions</header>
+    <p>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.</p>
+    <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
+      <code>function greetMe(yourName) { alert("Hello" + yourName); }
+      greetMe("World");  
+      </code>
+
+      The name of the function.
+      <ul>
+      <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+      <li>The JavaScript statements that define the function, enclosed in curly brackets, {...}.</li>
+      <li>For example, the following code defines a simple function named square</li>
+      <li>Function expressions are convenient when passing a function as an argument to another function. The following example shows a map function that should receive a function as first argument and an array as second argument:</li>
+      <li>In JavaScript, a function can be defined based on a condition. For example, the following function definition defines myFunc only if num equals 0:</li>
+    </ul></p>
+  </section>
+</main>
+</div>
